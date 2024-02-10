@@ -48,7 +48,7 @@ RUN git clone git://git.ardour.org/ardour/ardour.git /ardour
 
 WORKDIR /ardour
 
-RUN git checkout tags/5.12
+RUN git checkout tags/8.2
   # && cd ardour \
   # && ./waf configure --with-backends=dummy --test \
   # && ./waf build test
