@@ -53,11 +53,8 @@ RUN ./waf configure -j $(nproc) --no-phone-home \
   && ./waf build test \
   && ./waf
 
-RUN wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.28.tar.gz
-RUN tar -xzvf libsndfile-1.0.28.tar.gz libsndfile-1.0.28
-RUN cd libsndfile-1.0.28 && configure && make && make install
+# RUN wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.28.tar.gz
+# RUN tar -xzvf libsndfile-1.0.28.tar.gz libsndfile-1.0.28
+# RUN cd libsndfile-1.0.28 && configure && make && make install
 
 # RUN /ardour/tools/x-win/compile.sh
-
-
-# CMD /usr/games/fortune -a | cowsay
