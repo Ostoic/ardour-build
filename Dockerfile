@@ -10,6 +10,7 @@ ENV MAKEFLAGS=-j4
 RUN apt-get update -y && apt-get install -y \
   wget \
   git \
+  python2.7 \
   apt-utils \
   glibmm-2.4-dev \
   # jack \
