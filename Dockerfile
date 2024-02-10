@@ -12,7 +12,7 @@ RUN apt-get update -y && apt-get install -y \
   git \
   python2.7 \
   apt-utils \
-  glibmm-2.4-dev \
+  libglibmm-2.4-dev \
   # jack \
   # jackd \
   libarchive-dev \
