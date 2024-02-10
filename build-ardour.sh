@@ -22,6 +22,7 @@ sudo apt-get install -y \
   libsuil-dev
 
 git clone git://git.ardour.org/ardour/ardour.git
+git checkout 8.2
 cd ardour
 
 ./waf configure --no-phone-home
