@@ -39,7 +39,7 @@ RUN apt-get -y update && apt-get install -y \
   # qjackctl \
   vamp-plugin-sdk
 
-# RUN apt-get install -y \
+RUN ln -sf /usr/bin/python2.7 /usr/bin/python
 
 VOLUME [ "/build" ]
 
