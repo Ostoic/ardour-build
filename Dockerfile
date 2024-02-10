@@ -49,9 +49,9 @@ RUN git clone git://git.ardour.org/ardour/ardour.git /ardour
 WORKDIR /ardour
 
 RUN git checkout tags/8.2
-  # && cd ardour \
-  # && ./waf configure --with-backends=dummy --test \
-  # && ./waf build test
+RUN ./waf configure -j $(nproc) --no-phone-home \
+  && ./waf build test \
+  && ./waf
 
 RUN wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.28.tar.gz
 RUN tar -xzvf libsndfile-1.0.28.tar.gz libsndfile-1.0.28
