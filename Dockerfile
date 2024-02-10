@@ -1,13 +1,13 @@
 
-FROM ubuntu:18.04
-LABEL Name=ardour-build Version=0.0.1
+FROM ubuntu:latest
+LABEL Name=ardour-build Version=0.1.0
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV XARCH=x86_64
 ENV ROOT=/ardour
 ENV MAKEFLAGS=-j4
 
-RUN apt-get -y update && apt-get install -y \
+RUN apt-get update -y && apt-get install -y \
   wget \
   git \
   apt-utils \
