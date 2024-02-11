@@ -8,9 +8,13 @@ ENV ROOT=/ardour
 ENV MAKEFLAGS=-j4
 
 RUN apt-get update -y && apt-get install -y \
+  pkg-config \
   wget \
   git \
   python2.7 \
+  curl \
+  unzip \
+  rsync \
   apt-utils \
   libglibmm-2.4-dev \
   # jack \
