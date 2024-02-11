@@ -60,6 +60,10 @@ RUN ./waf configure -j $(nproc) --no-phone-home \
   && ./waf build test \
   && ./waf
 
+WORKDIR /ardour/tools/linux-packaging
+RUN ./build --public --strip some
+RUN ./package --public --singlearch
+
 # RUN wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.28.tar.gz
 # RUN tar -xzvf libsndfile-1.0.28.tar.gz libsndfile-1.0.28
 # RUN cd libsndfile-1.0.28 && configure && make && make install
