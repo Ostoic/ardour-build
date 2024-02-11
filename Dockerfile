@@ -1,4 +1,3 @@
-
 FROM ubuntu:latest
 LABEL Name=ardour-build Version=0.1.0
 
