@@ -38,7 +38,10 @@ RUN apt-get update -y && apt-get install -y \
   libxml2-dev \
   lv2-dev \
   # qjackctl \
-  vamp-plugin-sdk
+  libusb-1.0-0 \
+  libusb-1.0-0-dev \
+  vamp-plugin-sdk 
+
 
 RUN ln -sf /usr/bin/python2.7 /usr/bin/python
 
